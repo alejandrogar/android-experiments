@@ -1,0 +1,28 @@
+<tabs>
+
+    <tab
+        id="@+id/tab_activity"
+        icon="@drawable/ic_event_note_black_24dp"
+        title="Actividad"/>
+
+    <tab
+        id="@+id/tab_news"
+        icon="@drawable/ic_chrome_reader_mode_black_24dp"
+        title="Noticias"/>
+    <tab
+        id="@+id/tab_people"
+        icon="@drawable/ic_group_black_24dp"
+        title="Comunidad"/>
+    <tab
+        id="@+id/tab_diary"
+        icon="@drawable/ic_class_black_24dp"
+        title="Agenda"/>
+    <tab
+        id="@+id/tab_places"
+        icon="@drawable/ic_pin_drop_black_24dp"
+        title="Lugares"/>
+
+    <!--
+        barColorWhenSelected="#FF5381"
+    -->
+</tabs>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinatorlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <com.google.android.gms.maps.MapView
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.devexweb.materialconcept.Locations"
+        map:cameraZoom="13"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:behavior_scrolling_appbar_peek_height="@dimen/bottom_sheet_peek_height"
+        app:layout_behavior="@string/ScrollingAppBarLayoutBehavior">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/transporte_publico"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/filter_background_button_press"
+                    android:padding="4dp">
+
+                    <ImageButton
+                        android:id="@+id/transporte_publico_icon"
+                        android:layout_width="20dp"
+                        android:padding="20dp"
+                        android:layout_height="35dp"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/ic_directions_bus_vector"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="13dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:id="@+id/transporte_publico_quantity"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/transporte_publico_icon"
+                        android:layout_marginStart="8dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/vialidad_general"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/filter_background_button_press"
+                    android:padding="4dp">
+
+                    <ImageButton
+                        android:id="@+id/vialidad_general_icon"
+                        android:layout_width="20dp"
+                        android:padding="20dp"
+                        android:layout_height="35dp"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/ic_directions_car_black"
+                        android:background="@android:color/transparent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9"
+                        android:id="@+id/vialidad_general_quantity"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/vialidad_general_icon"
+                        android:layout_marginStart="8dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ciclovia"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/filter_background_button_press"
+                    android:padding="4dp">
+
+                    <ImageButton
+                        android:id="@+id/ciclovia_icon"
+                        android:layout_width="20dp"
+                        android:padding="20dp"
+                        android:layout_height="35dp"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/ic_directions_bike_black"
+                        android:background="@android:color/transparent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9"
+                        android:id="@+id/ciclovia_quantity"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/ciclovia_icon"
+                        android:layout_marginStart="8dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/peatonal"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/filter_background_button_press"
+                    android:padding="4dp">
+
+                    <ImageButton
+                        android:id="@+id/peatonal_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="35dp"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/ic_directions_walk_black"
+                        android:background="@android:color/transparent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9+"
+                        android:id="@+id/peatonal_quantity"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/peatonal_icon"
+                        android:layout_marginStart="8dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/anchor_point"
+        app:behavior_backdrop_peekHeight="@dimen/bottom_sheet_peek_height"
+        android:background="@android:color/transparent"
+        app:layout_behavior="@string/BackDropBottomSheetBehavior"
+        android:paddingTop="-30dp"
+        android:fitsSystemWindows="true"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:behavior_peekHeight="@dimen/bottom_sheet_peek_height"
+        android:id="@+id/bottom_sheet"
+        app:layout_behavior="@string/BottomSheetBehaviorGoogleMapsLike"
+        app:anchorPoint="@dimen/anchor_point"
+        android:fitsSystemWindows="true">
+
+        <include
+            layout="@layout/bottom_sheet_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"/>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/viewRoute"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_anchor="@id/bottom_sheet"
+        app:layout_anchorGravity="top|right|end"
+        android:src="@drawable/ic_directions_black_24dp"
+        android:tint="@color/white"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_behavior="@string/ScrollAwareFABBehavior"
+        android:clickable="true"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/merged_appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:tag="modal-appbar"
+        app:layout_behavior="@string/MergedAppBarLayoutBehavior"
+        app:behavior_merged_appbar_anchprocesoor_point="@dimen/anchor_point">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="bottom"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/expanded_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:title="@string/key_binding_default_toolbar_name"
+                app:navigationIcon="@drawable/ic_close_white_24dp"
+                app:elevation="4dp"/>
+        </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
+</android.support.design.widget.CoordinatorLayout>

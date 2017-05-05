@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mediaapp.com.practiceapp.detail_item"
+    tools:showIn="@layout/activity_detail_item">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/blabla"
+        android:text="Lorem ipsum Cupidatat adipisicing qui ullamco labore veniam ex dolore quis qui voluptate Excepteur enim incididunt laboris laborum sunt veniam consectetur sit velit veniam sed id officia sed adipisicing laborum fugiat qui Ut ut occaecat esse nisi ut quis deserunt fugiat id do anim dolor veniam culpa minim nisi minim amet sit in dolor elit reprehenderit laborum laboris cupidatat dolore laboris dolore fugiat proident non culpa dolor elit nisi culpa dolore qui Duis aliquip exercitation reprehenderit quis et esse mollit aliqua occaecat minim occaecat id adipisicing cillum in anim do amet quis laboris culpa aliquip et deserunt non cillum incididunt tempor consequat cupidatat magna occaecat sed qui cupidatat consectetur Excepteur fugiat tempor anim deserunt fugiat ut esse sint qui sit ut sint laboris in culpa esse voluptate elit cillum do laboris tempor laboris aute culpa culpa amet id culpa quis consequat esse occaecat tempor id ut voluptate reprehenderit mollit adipisicing laborum incididunt dolore dolore dolor occaecat sed incididunt voluptate elit sint dolore labore pariatur consectetur dolore cillum sunt Duis sit do Excepteur sit occaecat fugiat nisi aliquip Duis mollit dolore ex et deserunt officia."
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="16dp"/>
+
+</android.support.v4.widget.NestedScrollView>

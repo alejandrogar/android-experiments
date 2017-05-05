@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130sp"
+    android:layout_marginBottom="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:padding="0sp"
+    android:background="@drawable/border_list_recipe">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_width="110sp"
+                android:layout_height="100sp"
+                android:background="@drawable/detail_gradient"
+                android:transitionName="recipe_image_detail"
+                android:id="@+id/main_picture"
+                style="@style/ImageListRecipe"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+
+
+            <TextView
+                android:id="@+id/name_recipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TitleList"
+                android:text="Receta Ejemplo"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_toStartOf="@+id/cat" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout"
+                android:layout_above="@+id/linearLayout2"
+                android:layout_alignStart="@+id/name_recipe">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_action_device_access_time_primary"
+                    android:id="@+id/imageView4"
+                    android:layout_centerVertical="true"
+                    android:layout_alignStart="@+id/name_recipe" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="01:30"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="4dp"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/time"
+                    android:layout_centerVertical="true"
+                    android:layout_alignStart="@+id/porcion" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout2"
+                android:weightSum="1"
+                android:layout_alignBottom="@+id/main_picture"
+                android:layout_alignStart="@+id/linearLayout">
+
+                <ImageView
+                    android:id="@+id/id_porcion"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_action_action_perm_identity_primary"
+                    android:layout_alignBottom="@+id/main_picture"
+                    android:layout_alignStart="@+id/name_recipe" />
+
+                <TextView
+                    android:id="@+id/porcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="34"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="4dp"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:layout_alignBottom="@+id/id_porcion"
+                    android:layout_toEndOf="@+id/imageView4"
+                    android:layout_marginStart="9dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/cat"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="-7sp"
+                android:layout_marginBottom="-7sp"
+                android:gravity="center_vertical"
+                android:layout_alignBottom="@+id/main_picture"
+                android:layout_alignStart="@+id/main_picture" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/trigger"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"/>
+</RelativeLayout>

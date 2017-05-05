@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    app:cardElevation="2dp"
+    app:cardMaxElevation="8dp"
+    app:cardCornerRadius="2dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_border_color="#EEEEEE"
+            app:civ_border_width="0dp"
+            android:layout_marginLeft="16dp"
+            android:foregroundGravity="center_vertical"
+            app:civ_shadow="false"
+            app:civ_shadow_radius="10"
+            app:civ_shadow_color="#8BC34A"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center_vertical"
+            android:layout_alignTop="@+id/image"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/content"
+            android:layout_toEndOf="@+id/image">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Base.TextAppearance.AppCompat.Title"
+                android:transitionName="title"
+                android:text="Britta Holt"
+                android:textColor="#333333"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/previewMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Base.TextAppearance.AppCompat.Title"
+                android:transitionName="title"
+                android:text="We shoould eat this: gratest, Squash..."
+                android:textSize="13dp"
+                android:textColor="#616161"
+                android:layout_below="@+id/name"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="83dp"
+            android:layout_marginRight="16dp"
+            android:background="#f6cccccc"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:transitionName="title"
+            android:text="Fecha"
+            android:textSize="12dp"
+            android:gravity="end"
+            android:layout_marginRight="16dp"
+            android:foregroundGravity="right"
+            android:textColor="#868686"
+            android:layout_alignTop="@+id/content"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/launcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"/>
+
+</RelativeLayout>

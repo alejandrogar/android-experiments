@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Jfood</string>
+    <string name="banner_ad_unit_id_inicio">ca-app-pub-3685978633707118/6664762588</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="favorites">Favoritos</string>
+    <string name="categories">"Categorías"</string>
+    <string name="about">Acerca</string>
+    <string name="tips">"Tips"</string>
+    <string name="video_recipe">"Video recetas"</string>
+    <string name="contact">"Contáctanos"</string>
+    <string name="share">Compartir esta app</string>
+    <string name="comuncate">"Comunícate"</string>
+    <string name="diary">Agenda</string>
+
+    <string name="action_settings">Ajustes</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_save">Añadir a favoritos</string>
+    <string name="action_aspect">Cambiar vista</string>
+
+    <string name="title_activity_category">"Categorías"</string>
+    <string name="title_activity_diary">Agenda semanal</string>
+    <string name="title_activity_privacy_policy">"Política de Privacidad"</string>
+
+    <!--Contact Strings-->
+    <string name="title_contact">"Áyudanos a mejorar"</string>
+    <string name="desc_contact">""</string>
+    <string name="name_contact">Nombre</string>
+    <string name="message_contact">Comentarios</string>
+
+
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+    <string name="s_ingredients">Ingredientes</string>
+    <string name="s_steps">Procedimiento</string>
+    <string name="s_gallery">"Galería"</string>
+
+    <string name="skip">Omitir</string>
+    <string name="next">Siguiente</string>
+
+    <string name="view_recipe_on_website">Ver receta en sitio web</string>
+
+    <string name="swipe_back_image_view">Desliza hacia abajo para cerrar</string>
+    <string name="title_activity_settings">Ajustes</string>
+    <string name="title_activity_search">Buscar</string>
+
+
+    <string name="pref_header_notifications">Notificaciones</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="no_internet">"No hay conexión a Internet"</string>
+    <string name="message_contact_done">Mensaje enviado</string>
+
+    <string name="enabled_notifications">Notificaciones activadas</string>
+    <string name="disabled_notifications">Notificaciones desactivadas</string>
+
+    <string name="settings_notifications">Notificaciones</string>
+    <string name="news_notifications">Contenido nuevo</string>
+    <string name="news_notifications_desc">Recibir notificaciones cuando añadan recetas nuevas. \n (Las notificaiones pueden consumir mas batería de lo normal).</string>
+    <string name="diary_notifications">Notificaciones diarias</string>
+    <string name="diary_notifications_desc">"Recibir notificaciones en las horas establecidas en la sección de 'Agenda'."</string>
+    <string name="privacy_desc">"Política de privacidad"</string>
+    <string name="privacy_policy_jfood">"Política de privacidad de Jfood"</string>
+    <string name="clear_data">Borrar datos</string>
+
+    <string name="diary_desccription">"Con la agenda puedes recibir notificaciones en horas personalizadas para tener recetas para cada día. Para activarlas solo ve a Ajustes."</string>
+    <string name="notifications_diary_unactive">Para activarlas solo ir a Ajustes</string>
+    <string name="diary_instructions">"Definir la hora para recibir notificaciones diarias puede ser la hora de la comida o del almuerzo e incluso la cena."</string>
+    <string name="diary_define_button">Definir hora</string>
+    <string name="agree">Aceptar</string>
+    <string name="title_activity_contact">Contacto</string>
+
+    <string name="name">Nombre</string>
+    <string name="email">"Correo Electrónico"</string>
+    <string name="phone">"Teléfono"</string>
+    <string name="message_text">Escribe tu mensaje</string>
+    <string name="send">Enviar</string>
+    <string name="label_time_set">La hora actualmente establecida es:</string>
+    <string name="title_activity_ffdfdf">ffdfdf</string>
+    <string name="title_activity_category_filter">CategoryFilter</string>
+    <string name="title_activity_favorites">Tus recetas preferidas</string>
+    <string name="title_activity_tips">Tips</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Inicio</string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.homechat.homechat.Home"
+    android:background="#E4E4E4"
+    tools:showIn="@layout/activity_home">
+
+
+    <RelativeLayout
+        android:id="@+id/no_chats"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/no_chat_title"
+            style="@style/Base.TextAppearance.AppCompat.SearchResult.Title"
+            android:id="@+id/title_no_chats"
+            android:textSize="18dp"
+            android:textColor="@color/primary_text"
+            android:textAlignment="center"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/no_chat_title"
+            style="@style/Base.TextAppearance.AppCompat.SearchResult.Title"
+            android:id="@+id/textView"
+            android:textSize="12dp"
+            android:textColor="@color/primary_text"
+            android:textAlignment="center"
+            android:layout_below="@+id/title_no_chats"
+            android:layout_alignStart="@+id/title_no_chats"
+            android:layout_marginTop="17dp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:tint="#454545"
+            android:src="@drawable/ic_action_communication_chat_white"
+            android:layout_marginTop="147dp"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        app:stackFromEnd="true"
+        android:transcriptMode="alwaysScroll"
+        android:clickable="false"
+        android:longClickable="false"/>
+
+
+</RelativeLayout>

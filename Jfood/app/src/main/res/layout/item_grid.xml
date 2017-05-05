@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:id="@+id/imagen_Recipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="recipe_image_detail"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/nombre_Recipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/black_overlay"
+        android:maxLines="1"
+        android:padding="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@android:color/white" />
+
+</FrameLayout>

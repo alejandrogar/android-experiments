@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1f33b5</color>
+    <color name="colorPrimaryDark">#2833a9</color>
+    <color name="colorAccent">#E91E63</color>
+
+    <color name="greyBlue">#969EB0</color>
+    <color name="lightGrey">#A9B2C3</color>
+    <color  name="grey">#768199</color>
+    <color name="darkGrey">#454348</color>
+    <color name="ghostWhite">#FCFCFD</color>
+
+    <color name="background">#E4E4E4</color>
+    <color name="colorTextContent">#333333</color>
+    <color name="hourColor">#3399ff</color>
+</resources>
+
+
+

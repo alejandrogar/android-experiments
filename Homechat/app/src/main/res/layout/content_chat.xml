@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.homechat.homechat.Home"
+    android:background="@drawable/bg_messages"
+    tools:showIn="@layout/activity_chat">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/message_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_above="@+id/listFooter"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/user_data"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="32dp"
+                android:paddingTop="16dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_action_action_account_circle_white"
+                    app:civ_border="true"
+                    app:civ_border_color="@android:color/transparent"
+                    app:civ_border_width="0dp"
+                    app:civ_shadow="false"
+                    android:id="@+id/user_image" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#fff"
+                    style="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/user_email"
+                    android:layout_marginTop="13dp" />
+
+                <TextView
+                    android:id="@+id/user_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="13dp"
+                    android:textColor="#d6ffffff"
+                    android:layout_marginStart="31dp"
+                    android:layout_below="@+id/user_name"
+                    android:layout_toEndOf="@+id/user_image" />
+
+                <TextView
+                    android:id="@+id/user_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#9effffff"
+                    android:layout_below="@+id/user_image"
+                    android:layout_alignStart="@+id/user_email" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:stackFromEnd="true"
+                android:transcriptMode="alwaysScroll"
+                android:clickable="false"
+                android:longClickable="false"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/image_to_send_container"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d0000000"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:id="@+id/image_to_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_action_communication_chat_white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/listFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/MessageText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.97"
+            android:lines="1"
+            android:hint="Escribe tu mensaje"
+            android:paddingLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/text_box"
+            android:inputType="textMultiLine"
+            android:maxLines="1" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/send"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="5dp"
+            android:scaleType="center"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_action_content_send_white"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="mediaapp.com.practiceapp.FirebaseExample">
+    <item
+        android:id="@+id/delete_chat"
+        android:orderInCategory="100"
+        android:title="@string/menu_delete_chat"
+        android:icon="@drawable/ic_action_delete"
+        app:showAsAction="ifRoom" />
+</menu>

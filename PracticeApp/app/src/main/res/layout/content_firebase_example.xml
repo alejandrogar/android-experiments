@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android.support.v7.RecyclerView="http://schemas.android.com/apk/res-auto"
+    tools:context=".FirebaseExample">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listFooter"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="?attr/actionBarSize"
+        android.support.v7.RecyclerView:stackFromEnd ="true"
+        android:transcriptMode="alwaysScroll"
+        android:clickable="false"
+        android:longClickable="false"/>
+
+<LinearLayout
+    android:id="@+id/listFooter"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/MessageText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.97"
+        android:inputType="textShortMessage"
+        android:lines="1"
+        android:hint="Escribe tu mensaje"
+        android:paddingLeft="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:singleLine="true"
+        android:background="@drawable/text_box_background"/>
+
+    <ImageButton
+        android:id="@+id/addMessage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="5dp"
+        android:src="@drawable/ic_action_content_send"
+        android:background="@drawable/button_send"/>
+
+</LinearLayout>
+</RelativeLayout>
+

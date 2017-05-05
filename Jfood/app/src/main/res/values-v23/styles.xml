@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="ActionBarStyle" parent="Widget.AppCompat.ActionBar">
+                <item name="colorPrimary">@color/TextIcons</item>
+                <item name="android:textColorPrimary">@color/colorPrimary</item>
+                <item name="drawerArrowStyle">@style/MyDrawerArrowToggle</item>
+                <item name="actionMenuTextColor">@color/colorPrimary</item>
+                <item name="colorControlNormal">@color/colorPrimary</item>
+                <item name="colorControlActivated">@color/colorPrimary</item>
+                <item name="selectableItemBackground">?android:selectableItemBackground</item>
+                <item name="selectableItemBackgroundBorderless">?android:selectableItemBackground
+                </item>
+                <item name="colorControlHighlight">@color/colorAccent</item>
+                <item name="android:subtitle">@color/colorPrimary</item>
+                <item name="android:subtitleTextColor">@color/colorPrimary</item>
+        </style>
+</resources>

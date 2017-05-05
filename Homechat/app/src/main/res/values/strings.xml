@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Home chat</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="send_image">Enviar Imagen</string>
+    <string name="send_photo">Tomar foto</string>
+    <string name="auth_failed">Algo has salido mal</string>
+    <string name="home">Inicio</string>
+    <string name="title_activity_add_chat">AddChat</string>
+    <string name="search_email">Buscar por email</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="settings">Ajustes</string>
+    <string name="no_chat_title">Aún no tienes ninguna conversación</string>
+    <string name="not_found">No se encontraron resultados</string>
+</resources>
